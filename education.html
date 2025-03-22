@@ -60,10 +60,8 @@
         >
           <img
             src="./images/logo.jpg"
-            width="50"
-            height="50"
             alt="Logo"
-            class="logo mr-4 max-w-xs"
+            class="logo"
             style="border-radius: 50%"
           />
           <span class="ml-3 text-xl"><strong> Shan Ali</strong></span>
@@ -88,40 +86,108 @@
           <a class="mr-5 hover:text-gray-900" href="./teaching.html"
           >Teaching</a
           >
-          <a class="mr-5 hover:text-gray-900" href="./workshops.html">Workshops</a>
+          <a class="mr-5 hover:text-gray-900" href="./workshops.html"
+          >Workshops</a
+          >
           <a class="mr-5 hover:text-gray-900" href="./index.html">Contact</a>
         </nav>
       </div>
     </header>
-   
-
     <div class="relative bg-gray-900 text-white py-24 text-center">
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./images/hall.jpeg'); filter: blur(4px); mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0));"></div>
-      <h1 class="relative text-3xl font-bold">CONFERENCES & SUMMITS</h1>
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./images/Premium\ Photo\ _\ Congratulatory\ conferment\ and\ award\ of\ the\ diploma\ with\ the\ graduates\ of\ the\ university_.jpeg'); filter: blur(4px); mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0));"></div>
+      <h1 class="relative text-3xl font-bold">EDUCATION</h1>
   </div>
+  
 
-  <div class="relative min-h-screen bg-cover bg-center p-6 text-white" style="background-image: url('./images/hall.jpeg');">
-    <div class="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-lg"></div>
-    <div class="relative max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-white border-b-2 border-white pb-2 mb-6 text-center">CONFERENCES</h2>
-        <ul class="space-y-4">
-            <li class="group bg-gray-800 bg-opacity-70 p-5 rounded-lg shadow-lg transition-all duration-300 hover:bg-gray-700 hover:shadow-xl flex items-start">
-                <span class="text-blue-300 text-2xl pr-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12">🎭</span>
-                <div>
-                    <strong class="text-lg transition-colors duration-300 group-hover:text-blue-300">AI Governance & Digital Security</strong>
-                    <p class="text-sm text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                        Organized by the University of Manchester and Indiana University in collaboration with the Manchester Business and Property Courts Forum.
-                    </p>
-                </div>
-            </li>
-        </ul>
+    <style>
+      .education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./images/Premium\ Photo\ _\ Congratulatory\ conferment\ and\ award\ of\ the\ diploma\ with\ the\ graduates\ of\ the\ university_.jpeg') 
+    no-repeat center center/cover;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+      .education-card {
+        background: rgba(31, 41, 55, 0.9);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+      .education-card:hover {
+        transform: scale(1.05);
+        background-color: rgba(32, 31, 31, 0.694); /* Light grey on hover */
+      }
+      .degree-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        transition: color 0.3s ease;
+      }
+      .degree-title:hover {
+        color: #3b82f6;
+      }
+      .grade {
+        color: #facc15;
+        font-weight: bold;
+      }
+      .date {
+        font-weight: bold;
+        color: #facc15;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    </style>
+    
+    <div class="education-container">
+      <div class="education-card">
+        <h2 class="degree-title">📖 Ph.D. Law Scholar</h2>
+        <p>University of Padova</p>
+        <p>📍 Address: Via VIII Febbraio, 2, 35122 Padova PD Italy</p>
+        <p>📜 Thesis Topic: Digital rhetoric and legal, economic, and social applications of the blockchain network on the Web 3.0</p>
+        <p class="date">📅 July 2024 - Current</p>
+        <p>Visiting Research Student at Nottingham Law School, Nottingham Trent University, UK</p>
+      </div>
+      
+      <div class="education-card">
+        <h2 class="degree-title">⚖ Master of Law (LLM)</h2>
+        <p>Bahria University Islamabad</p>
+        <p>📍 Address: Shangrilla Rd, E 8/1, Islamabad, Pakistan</p>
+        <p class="date">📅 2019 – 2021</p>
+        <p>📊 Final grade: <span class="grade">CGPA = 3.93/4.00 Grade = A (With Distinction)</span></p>
+      </div>
+      
+      <div class="education-card">
+        <h2 class="degree-title">🏛 Bachelor of Law (LLB)</h2>
+        <p>Government College University Faisalabad</p>
+        <p>📍 Address: Kotwali Rd, Gurunanakpura, Faisalabad, Pakistan</p>
+        <p class="date">📅 2013 – 2018</p>
+        <p>📊 Final grade: <span class="grade">CGPA = 3.46/4.00 Grade = A</span></p>
+      </div>
     </div>
-</div>
-
-
-
     
-    
+
+
 
 
     <footer>
@@ -134,8 +200,7 @@
         </a>
         <a href="https://www.linkedin.com/in/shan-ali-119443203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="text-blue-600 text-2xl hover:text-blue-800">
             <i class="fab fa-linkedin"></i>
+         
         </div>
       </div>
     </footer>
-  </body>
-</html>
